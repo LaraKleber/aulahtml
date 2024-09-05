@@ -1,6 +1,5 @@
-
 h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(57, 176, 255);
     font-size: 24px;
     text-align: center;
 } /* fim h1 */
@@ -9,15 +8,9 @@ ul {
     list-style: none; /* remove marcador */
     border: 4px solid; /* cria uma borda solida */
     border-color: gray; /* cor da borda */
-    background-color: rgb(255, 167, 183); /* plano de fundo */
+    background-color: lightgrey; /* plano de fundo */
     padding: 4px; /* margem interna */
 } /* fim ul */
-ol{
-    border: 4px solid; /* cria uma borda solida */
-    border-color: rgb(255, 138, 200); /* cor da borda */
-    background-color: rgb(255, 255, 255); /* plano de fundo */
-    padding: 4px; /* margem interna */
-}
 ul li {
     background-color: yellow;
 }
@@ -33,18 +26,23 @@ ul li {
 }
 
 .titulo {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40pt;
-    color: rgb(255, 0, 128);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22pt;
+    color: midnightblue;
     text-align: center;
     margin-bottom: 4px;
 }
 
-.img{
-    border: 20px solid;
-    border-color: pink;
-    height: 300px;
-
-    
+.texto-simples {
+    text-align: justify;
+    font-size: 12pt;
 }
 
+.botao {
+    font-weight: bold;
+    padding: 4px;
+}
+
+.botao-secundario {
+    background-color: rgb(193, 192, 192);
+}
