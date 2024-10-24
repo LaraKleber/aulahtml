@@ -1,4 +1,4 @@
-from flask import (Flask, request,) # Importa o flask
+from flask import (Flask, request, render_template) # Importa o flask
 
 app = Flask(__name__) # cria uma instância
 
@@ -43,11 +43,11 @@ def potencia(um: float, dois: float):
     return f"""<h1>{um}^{dois}
      ={um**dois}</h1>"""
 
+@app.route("/tabuada")
 @app.route("/tabuada/<int:numero>", methods=['GET'])
-def tabuada(numero: int):
-    html="<ul>"
-    for i in range(11):
-    
-      html+=f"<li> {numero}x{i}={numero*i}</li>"
-    
-    return html
+def tabuada(numero = None):   
+
+    if 'numero' in request.args: 
+       numero = int(request.args.get('numero'))
+
+    return render_template('tabuada.html', numero=numero)
